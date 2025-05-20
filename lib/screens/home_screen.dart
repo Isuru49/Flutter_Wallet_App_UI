@@ -19,9 +19,7 @@ class HomeScreen extends StatelessWidget {
           children: [
             Expanded(
               child: SingleChildScrollView(
-                padding: const EdgeInsets.only(
-                  bottom: 24.0,
-                ), // Extra bottom padding
+                padding: const EdgeInsets.only(bottom: 24.0),
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20.0),
                   child: Column(
@@ -93,7 +91,7 @@ class HomeScreen extends StatelessWidget {
                         'Your favorites people',
                         style: TextStyle(
                           fontSize: 16,
-                          fontWeight: FontWeight.w500,
+                          fontWeight: FontWeight.w800,
                         ),
                       ),
                       const SizedBox(height: 10),
@@ -101,20 +99,35 @@ class HomeScreen extends StatelessWidget {
                         height: 50,
                         child: ListView(
                           scrollDirection: Axis.horizontal,
-                          children: const [
-                            FavoriteUserAvatar(label: 'Add', isAdd: true),
-                            FavoriteUserAvatar(
-                              label: 'Grace L.',
-                              imagePath: 'assets/images/user1.png',
+                          children: [
+                            SizedBox(
+                              // Increased width for "Add" button
+                              width: 80, // Adjust as needed
+                              child: const FavoriteUserAvatar(
+                                label: 'Add',
+                                isAdd: true,
+                              ),
                             ),
-                            FavoriteUserAvatar(
-                              label: 'Lawrence A.',
-                              imagePath: 'assets/images/user2.png',
+                            SizedBox(
+                              // Increased width for "Grace L."
+                              width: 80, // Adjust as needed
+                              child: const FavoriteUserAvatar(
+                                label: 'Grace L.',
+                                imagePath: 'assets/images/user1.png',
+                              ),
+                            ),
+                            SizedBox(
+                              // Increased width for "Lawrence A."
+                              width: 80, // Adjust as needed
+                              child: const FavoriteUserAvatar(
+                                label: 'Lawrence A.',
+                                imagePath: 'assets/images/user2.png',
+                              ),
                             ),
                           ],
                         ),
                       ),
-                      const SizedBox(height: 32), // Extra space at the bottom
+                      const SizedBox(height: 22),
                     ],
                   ),
                 ),
