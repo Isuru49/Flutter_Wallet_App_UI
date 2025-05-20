@@ -16,25 +16,44 @@ class HomeScreen extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 20.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
-              Text(
+            children: [
+              const Text(
                 'Hi Ehi,',
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
               ),
-              SizedBox(height: 8),
+              const SizedBox(height: 8),
               Row(
                 children: [
-                  Text(
+                  const Text(
                     '1,234.00',
                     style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(width: 8),
-                  Image(
-                    image: AssetImage('assets/flags/gh.png'),
-                    width: 24,
-                  ),
-                  SizedBox(width: 4),
-                  Text('GHS'),
+                  const SizedBox(width: 8),
+                  Image.asset('assets/flags/gh.png', width: 24),
+                  const SizedBox(width: 4),
+                  const Text('GHS'),
+                ],
+              ),
+              const SizedBox(height: 24),
+              const Text(
+                'Here are some things you can do',
+                style: TextStyle(fontSize: 16, color: Colors.grey),
+              ),
+              const SizedBox(height: 16),
+
+              // Stub action cards for now
+              GridView.count(
+                crossAxisCount: 2,
+                shrinkWrap: true,
+                crossAxisSpacing: 10,
+                mainAxisSpacing: 10,
+                childAspectRatio: 1.3,
+                physics: const NeverScrollableScrollPhysics(),
+                children: const [
+                  Placeholder(fallbackHeight: 80), // Pay
+                  Placeholder(fallbackHeight: 80), // Request
+                  Placeholder(fallbackHeight: 80), // Airtime
+                  Placeholder(fallbackHeight: 80), // Bill
                 ],
               ),
             ],
