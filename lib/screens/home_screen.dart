@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/action_card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -49,11 +50,27 @@ class HomeScreen extends StatelessWidget {
                 mainAxisSpacing: 10,
                 childAspectRatio: 1.3,
                 physics: const NeverScrollableScrollPhysics(),
-                children: const [
-                  Placeholder(fallbackHeight: 80), // Pay
-                  Placeholder(fallbackHeight: 80), // Request
-                  Placeholder(fallbackHeight: 80), // Airtime
-                  Placeholder(fallbackHeight: 80), // Bill
+                children: [
+                  const ActionCard(
+                    icon: Icons.send,
+                    title: 'Pay someone',
+                    subtitle: 'To wallet, bank or mobile number',
+                  ),
+                  const ActionCard(
+                    icon: Icons.request_page,
+                    title: 'Request money',
+                    subtitle: 'Request money from OroboPay users',
+                  ),
+                  const ActionCard(
+                    icon: Icons.phone_android,
+                    title: 'Buy airtime',
+                    subtitle: 'Top-up or send airtime across Africa',
+                  ),
+                  const ActionCard(
+                    icon: Icons.receipt_long,
+                    title: 'Pay bill',
+                    subtitle: 'Zero transaction fees when you pay',
+                  ),
                 ],
               ),
             ],
