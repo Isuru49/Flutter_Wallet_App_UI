@@ -19,7 +19,9 @@ class HomeScreen extends StatelessWidget {
           children: [
             Expanded(
               child: SingleChildScrollView(
-                padding: const EdgeInsets.only(bottom: 24.0), // Extra bottom padding
+                padding: const EdgeInsets.only(
+                  bottom: 24.0,
+                ), // Extra bottom padding
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20.0),
                   child: Column(
@@ -27,14 +29,20 @@ class HomeScreen extends StatelessWidget {
                     children: [
                       const Text(
                         'Hi Ehi,',
-                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w500,
+                        ),
                       ),
                       const SizedBox(height: 8),
                       Row(
                         children: [
                           const Text(
                             '1,234.00',
-                            style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+                            style: TextStyle(
+                              fontSize: 32,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                           const SizedBox(width: 8),
                           Image.asset('assets/flages/gh.png', width: 24),
@@ -78,10 +86,15 @@ class HomeScreen extends StatelessWidget {
                           ),
                         ],
                       ),
-                      const SizedBox(height: 32),
+                      const SizedBox(height: 12),
+                      const Divider(thickness: 1),
+                      const SizedBox(height: 12),
                       const Text(
                         'Your favorites people',
-                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                        ),
                       ),
                       const SizedBox(height: 10),
                       SizedBox(
