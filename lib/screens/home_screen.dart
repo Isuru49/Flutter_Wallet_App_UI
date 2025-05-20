@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../widgets/action_card.dart';
 import '../widgets/favorite_user_avatar.dart';
+import '../widgets/bottom_nav_bar.dart';
+
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -101,6 +103,7 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
       ),
+      bottomNavigationBar: const BottomNavBar(),
     );
   }
 }
