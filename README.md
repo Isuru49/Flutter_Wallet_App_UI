@@ -4,13 +4,23 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This is a Flutter-based mobile wallet user interface, developed as part of the Mobile Developer Internship Task for 
+**ZephyraTech Solutions**.
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- View current balance in Ghanaian Cedi (GHS)
+- Pay someone 
+- Request money from other users
+- Buy airtime across Africa
+- Pay bills 
+- Favorite people section with quick actions
+- Bottom navigation bar for navigation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Technologies Used
+
+- [Flutter](https://flutter.dev/)
+- Dart
+- Google Fonts (optional)
+- Local image assets
+
