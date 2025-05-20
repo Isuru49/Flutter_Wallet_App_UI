@@ -19,7 +19,8 @@ class FavoriteUserAvatar extends StatelessWidget {
         CircleAvatar(
           radius: 25,
           backgroundColor: Colors.grey.shade200,
-          backgroundImage: isAdd ? null : AssetImage(imagePath!),
+          backgroundImage:
+              (isAdd || imagePath == null) ? null : AssetImage(imagePath!),
           child: isAdd ? const Icon(Icons.add, color: Colors.black) : null,
         ),
         const SizedBox(height: 8),
