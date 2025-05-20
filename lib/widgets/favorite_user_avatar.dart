@@ -22,7 +22,7 @@ class FavoriteUserAvatar extends StatelessWidget {
           backgroundImage: isAdd ? null : AssetImage(imagePath!),
           child: isAdd ? const Icon(Icons.add, color: Colors.black) : null,
         ),
-        const SizedBox(height: 6),
+        const SizedBox(height: 8),
         Text(label, style: const TextStyle(fontSize: 12)),
       ],
     );
