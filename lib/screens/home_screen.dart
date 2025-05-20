@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../widgets/action_card.dart';
+import '../widgets/favorite_user_avatar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -72,6 +73,29 @@ class HomeScreen extends StatelessWidget {
                     subtitle: 'Zero transaction fees when you pay',
                   ),
                 ],
+              ),
+              const SizedBox(height: 20),
+              const Text(
+                'Your favorites people',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+              ),
+              const SizedBox(height: 10),
+              SizedBox(
+                height: 70,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: const [
+                    FavoriteUserAvatar(label: 'Add', isAdd: true),
+                    FavoriteUserAvatar(
+                      label: 'Grace L.',
+                      imagePath: 'assets/images/user1.png',
+                    ),
+                    FavoriteUserAvatar(
+                      label: 'Lawrence A.',
+                      imagePath: 'assets/images/user2.png',
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
